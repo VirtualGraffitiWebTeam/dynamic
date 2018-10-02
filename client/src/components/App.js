@@ -4,7 +4,7 @@ class App extends Component {
   render() {
     return (
       <div>
-        <h1>Dynamic</h1>
+        <h1>Dynamic Price Table</h1>
       </div>
     );
   }
