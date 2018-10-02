@@ -8,6 +8,7 @@ module.exports = app => {
     request.input('Table', sql.Int, 1);
     request.execute('usp_GetTableById', (err, result) => {
       if (result) {
+        sql.close();
         res.send(result);
       } else {
         res.send(err);
